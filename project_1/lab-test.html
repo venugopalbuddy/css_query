@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>lab-test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container{
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items:flex-end;
+            }
+            h1{
+                text-align: center;
+                padding: 5px;
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+            }
+            img{
+                position:sticky;
+                top:10%;
+                
+            }
+            .message{
+                display:none;
+
+            }
+            .show :hover .message, .show:active .message{
+                display:inline;
+            }
+            #submit,#reset{
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                background-color: cyan;
+                margin-top: 100px;
+                margin-left: 8px;
+                align-items: center;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1 >Please fill the form below</h1>
+       <div class="container">
+           <form action="#">
+               <h3><B>1. Your Contact Details</B></h3>
+                <input type="text" id="" name="fullname" placeholder="Full Name">
+                <input type="number" id="" name="pid" placeholder="Patient id if exists"><br>
+                <input type="number" id="" name="contactno" placeholder="Contact Number" minlength="1" maxlength="10">
+                <input type="text" id="" name="email" placeholder="Email id"><br>
+                <h3><b>2. Address</b></h3>
+                <input type="text" id="" name="houseno" placeholder="House No.">
+                <input type="text" id="" name="street" placeholder="Street"><br>
+                <input type="text" id="" name="area" placeholder="Area"><br>
+                <h4><b>District</b></h4>
+                <select name="district" id="">
+                    <option>choose</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select><br>
+                
+                <h3><b>3. Choose The test Type.</b></h3>
+                <h4>Check atleast one box without fail</h4>
+                <input type="checkbox" id="" name="cbc" value="cbc">
+                <label for="cbc">CBC</label><br>
+                <input type="checkbox" id="" name="completeu" value="complete_urine">
+                <label for="completeu">Complete Urine</label><br>
+                <input type="checkbox" id="" name="lipidp" value="lipid_profile">
+                <label for="lipidp">Lipid Profile</label><br>
+                <input type="checkbox" id="" name="tsh" value="tsh">
+                <label for="tsh">Thyroid Simulating Hormone(TSH)</label><br>
+                <input type="checkbox" id="" name="glucose" value="glucosetest">
+                <label for="glucose">Glucose Test</label><br>
+
+                <h3><b>4. Do you want a hard copy of the report also?</b></h3>
+                <input type="radio" id="" name="report" value="yes">
+                <label for="report">Yes</label>
+                <input type="radio" id="" name="report" value="no">
+                <label for="report">No</label><br>
+
+                <h3><b>5. Select Your Comfortable Date and Time</b></h3>
+                <label for="date">Select date:</label>
+                <input type="date" id=" " name="date">
+                <label for="time">Select time:</label>
+                <input type="time" id="" name="time"><br>
+
+                <button id="submit" type="submit">Submit</button>
+                <button id="reset" type="reset">reset</button>
+                
+            </form>
+            
+           <img src="C:\Users\venugopal\Documents\Greatlearning\Frontend\assignments\project_1\lab-test.jpg">
+       </div>
+        
+        
+    </body>
+</html>
